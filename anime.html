@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Art Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <nav>
+      <img src="images/logo.png" alt="Logo" class="logo">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li class="dropdown">
+                <a href="gallery.html">Gallery</a>
+                <ul class="dropdown-menu">
+                    <li><a href="cars.html">Cars</a></li>
+                    <li><a href="anime.html">Anime</a></li>
+                    <li><a href="nature.html">Nature</a></li>
+                </ul>
+            </li>
+            <!-- Add more navigation links as needed -->
+        </ul>
+    </nav>
+
+    <header>
+        <!-- Your Hero Section Content -->
+        <h1>Gallery</h1>
+       
+    </header>
+
+    <div class="box-container">
+        <h2>Welcome to Talented Arts</h2>
+
+        <section>
+            <h2>Anime</h2>
+            <div class="gallery">
+              <div class="gallery-item">
+                <a href="images/anime/image1.jpg" data-lightbox="gallery-group" data-title="Image 1">
+                  <img src="images/anime/image1.jpg" alt="Image 1">
+                </a>
+              </div>
+              <div class="gallery-item">
+                <a href="images/anime/image2.jpg" data-lightbox="gallery-group" data-title="Image 2">
+                  <img src="images/anime/image2.jpg" alt="Image 2">
+                </a>
+              </div>
+            </div>
+            <br>
+            <div class="gallery">
+              <div class="gallery-item">
+                <a href="images/anime/image3.jpg" data-lightbox="gallery-group" data-title="Image 3">
+                  <img src="images/anime/image3.jpg" alt="Image 3">
+                </a>
+              </div>
+              <div class="gallery-item">
+                <a href="images/anime/image4.jpg" data-lightbox="gallery-group" data-title="Image 4">
+                  <img src="images/anime/image4.jpg" alt="Image 4">
+                </a>
+              </div>
+            </div>
+            <!-- Add more gallery items as needed -->
+            
+            <script>
+              lightbox.option({
+                'resizeDuration': 200,
+                'wrapAround': true
+              });
+            </script>
+                
+            
+          </section>
+
+    <footer>
+        <!-- Your Footer Content -->
+        <p>&copy; 2023 My Art Website. All rights reserved Nashtar Metsane.</p>
+        <!-- Add links to privacy policy, terms of service, and social media profiles -->
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

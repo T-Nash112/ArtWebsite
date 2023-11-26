@@ -1,0 +1,215 @@
+/* Reset some default styles to remove browser-specific styling */
+body, ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #FF5733; /* Red */
+    text-align: center;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+
+.logo {
+    width: 40px; /* Adjust the width as needed */
+    height: auto;
+    margin-right: 10px;
+}
+
+ul {
+    list-style-type: none;
+    margin-left: auto; /* Push the navigation links to the right */
+}
+
+li {
+    display: inline-block;
+    position: relative; /* Needed for the dropdown menu */
+    margin-right: 20px;
+}
+
+a {
+    color: #FFFFFF; /* White */
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+
+a:hover {
+    background-color: #FBBF24; /* Yellow */
+}
+
+/* Dropdown Menu Styles */
+.dropdown-menu {
+    display: none; /* Hide the dropdown menu by default */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #FF5733; /* Red */
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block; /* Show the dropdown menu on hover */
+}
+
+.dropdown-menu li {
+    margin-right: 0; /* Reset the margin for dropdown items */
+}
+
+.dropdown-menu a {
+    color: #FFFFFF; /* White */
+}
+
+/* Your CSS styles go here */
+/* Include the styles we discussed earlier for the navigation bar and dropdown menu */
+
+nav {
+    background-color: #FF5733; /* Red */
+    text-align: center;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+/* ... Other styles for the navigation bar ... */
+
+footer {
+    background-color: #FF5733; /* Red, matching the navigation bar */
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    color: #FFFFFF; /* White, matching the navigation bar text color */
+    margin: 0;
+}
+
+footer a {
+    color: #FFFFFF; /* White, matching the navigation bar text color */
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+footer a:hover {
+    background-color: #FBBF24; /* Yellow, matching the navigation bar hover color */
+}
+
+/* Your CSS styles go here */
+/* Include the styles we discussed earlier for the navigation bar and footer */
+
+.box-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+.box {
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.box h3 {
+    color: #FF5733;
+}
+
+.box p {
+    color: #333;
+}
+
+/* Your CSS styles go here */
+/* Include the styles we discussed earlier for the navigation bar, boxes, and footer */
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Set the height of the body to fill the viewport */
+    background: linear-gradient(135deg, #FF9800, #FF5722, #2196F3, #00BCD4);
+    background-size: 600% 600%;
+    animation: gradient 12s ease infinite;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+section {
+    padding: 20px;
+    background-color: #fff;
+    margin-bottom: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .gallery-item {
+    margin: 10px;
+  }
+  
+  .gallery-item img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .gallery-item img:hover {
+    transform: scale(1.1);
+  }
+
+  .slideshow-container {
+    position: relative;
+    max-width: 100%;
+    height: 400px;
+    margin: 0 auto;
+  }
+  
+  .slideshow-image {
+    display: none;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .slideshow-image.active {
+    display: block;
+  }
+  
+  .slideshow-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  .slideshow-control.prev {
+    left: 20px;
+  }
+  
+  .slideshow-control.next {
+    right: 20px;
+  }
+
+  /* Animation for gradient background */
+  @keyframes gradient {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+  }
